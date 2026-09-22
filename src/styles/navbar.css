@@ -1,0 +1,68 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%;
+}
+
+.navbar-inner {
+  max-width: 975px;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  font-family: "Brush Script MT", cursive, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.navbar-search {
+  background: #efefef;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 260px;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .navbar-search {
+    display: block;
+  }
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.navbar-links a {
+  font-weight: 600;
+}
+
+.navbar-links a[title="Profile"] {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #efefef;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.navbar-logout {
+  font-weight: 600;
+  color: #ed4956;
+}
